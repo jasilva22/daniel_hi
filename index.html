@@ -1,5 +1,80 @@
 ---
-layout: default
+layout: member_default
 title: Homepage
 ---
-<h1 class="text-4xl font-bold text-slate-900">Welcome to your homepage!</h1>
+<h1>working?</h1>
+<!-- audio player - meditations --> 
+<section class=" bg-gray-100 p-5p">
+    <div class="container grid md:grid-cols-2 items-center justify-center w-full min-h-screen">
+    <!-- Div for list of meditations -->
+    <div class="md:flex justify-center items-center hidden">
+        <div>
+            <h4 class="semi-bold">list of meditations:</h4>
+            
+            <!-- <div class="play-pause main-song" id="free-fall">
+                <p>
+                    <span class="material-symbols-rounded cursor-pointer text-2xl w-11 h-11  items-center justify-center text-mediaTitle inline-flex">play_arrow</span>
+                1. Free Fall
+                </p>
+            </div> -->
+
+
+            <ul class="">
+                <!-- <a href="audio/'+'songs[indexValue - 1].audio'+'.mp3'"><li>1. Free Fall</li></a> -->
+                
+                <!-- <input type="button" onclick="playSong(); pauseSong(); loadData(indexValue)" value = "1. Free Fall" class="cursor-pointer main-song play-pause"> -->
+                <li>1. Free Fall</li>
+                <li>2. Intrinstic Breath</li>
+                <li>3. Liquid Fall</li>
+                <li>4. Medical</li>
+                <li>5. Pinocchio Fall Intro</li>
+                <li>6. Pinocchio Fall</li>
+                <li>7. Reboot</li>
+                <li>8. Self Healing Banter</li>
+                <li>9. Slo Mo Fall</li>
+                <li>10. Three Principles</li>
+                <li>11. Trust</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Audio Player -->
+        <div class="flex justify-center items-center">
+        <div class="content rounded-2xl py-7 px-8">
+            <div class="top-bar flex items-center justify-center text-lg">
+                <!-- <span class="material-symbols-rounded cursor-pointer text-2xl">expand_more</span> -->
+                <!-- use justify-between instead of justify-center in the div above if you decide to use the expand more and more_horiz spans later on (dots could be clikced for a drop down list of meditations - think that would be better than having them off to the side - OR - figure out how to make those clickable and play the meditation on the right) -->
+                <span class="text-center">Now Playing</span>
+                <!-- <span class="material-symbols-rounded cursor-pointer text-2xl">more_horiz</span> -->
+            </div>
+            <div class="image-wrapper flex justify-center">
+                <div class="music-image p-2 mt-6">
+                    <img src="images/img1.jpeg" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="music-titles text-center my-8 text-mediaTitle">
+                <p class="name text-lg">Free Fall - Adrian Bean</p>
+                <p class="artist text-sm mt-1 opacity-90">Adrian Bean</p>
+            </div>
+            <div class="progress-details w-full h-1 rounded-2xl bg-gray-300">
+                <div class="progress-bar w-50p h-full rounded-[inherit] bg-mediaProgress cursor-pointer relative">
+                    <span class="absolute w-3 h-3 bg-mediaProgress rounded-[inherit] -translate-y-25p opacity-0 transition-opacity duration-300 ease-out hover:opacity-100"></span>
+                </div>
+                <div class="time flex items-center justify-between text-mediaTitle">
+                    <span class="current">0:00</span>
+                    <span class="final">5:30</span>
+                </div>
+            </div>
+            <div class="control-btn mt-12 mb-5 flex items-center justify-between">
+                <span class="material-symbols-rounded cursor-pointer text-2xl w-11 h-11 flex items-center justify-center text-mediaTitle" id="repeat">repeat</span>
+                <span class="material-symbols-rounded cursor-pointer text-2xl w-11 h-11 flex items-center justify-center text-mediaTitle" id="prev">skip_previous</span>
+                <div class="play-pause">
+                    <span class="material-symbols-rounded cursor-pointer text-2xl w-11 h-11 flex items-center justify-center text-mediaTitle">play_arrow</span>
+                </div>
+                <span class="material-symbols-rounded cursor-pointer text-2xl w-11 h-11 flex items-center justify-center text-mediaTitle" id="next">skip_next</span>
+                <span class="material-symbols-rounded cursor-pointer text-2xl w-11 h-11 flex items-center justify-center text-mediaTitle" id="shuffle">shuffle</span>
+            </div>
+        </div>
+    </div>
+    <audio src="audio/reboot.mp3" class="main-song"></audio>
+</div>
+</section>

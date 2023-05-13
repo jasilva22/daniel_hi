@@ -1,0 +1,39 @@
+<!-- Navbar -->
+<nav class="relative mx-auto">
+    <!-- Flex Container -->
+    <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="p-3p">
+            <a href="/index.html" class="text-3xl">LOGO</a>
+            <!-- put image of logo here when/if get one -->
+            <!-- <img src="/img/whatever.png" alt="put logo here"> -->
+        </div>
+        <!-- Menu Items - Hidden on Mobile -->
+        <div class="space-x-6 hidden md:flex p-3p">
+            <a href="about.html" class="">Book</a>
+            <a href="#" class="">Meditations</a>
+            <a href="#" class="">Contact Us</a>
+            <a href="https://ready-mist.cloudvent.net?msopen=/member/sign_in" class="">Login/Sign Up</a>
+
+            <!-- <a href="#" class="">Logout</a> -->
+        </div>
+
+        <!-- Hamburger Icon - Show on Mobile -->
+        <button id="menu-btn" class="group hamburger-button block hamburger md:hidden focus:outline-none px-5p z-20">
+            <span class="group-hover:bg-cyan-600 hamburger-top"></span>
+            <span class="group-hover:bg-cyan-600 hamburger-middle"></span>
+            <span class="group-hover:bg-cyan-600 hamburger-bottom"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+        <div id="menu" class="mobile-menu absolute flex-col hidden items-center w-full h-screen bg-cyan-600 text-white z-10 top-0 bottom-0 left-0 right-0">
+            <a href="#" class="p-5p mt-10p block text-center hover:bg-white hover:text-cyan-800">Link One</a>
+            <a href="#" class="p-5p block text-center hover:bg-white hover:text-cyan-800">Link Two</a>
+            <a href="#" class="p-5p block text-center hover:bg-white hover:text-cyan-800">Link Three</a>
+            <a href="#" class="p-5p block text-center hover:bg-white hover:text-cyan-800">Link Four</a>
+        </div>
+    </div>
+
+</nav>
